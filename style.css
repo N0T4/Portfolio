@@ -1,0 +1,319 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(./img/co341S.jpeg);
+    background-size: contain;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 1104px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border: 1px solid #fff;
+    border-top: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    padding: 43px 45px 51px 45px;
+}
+
+.hero {
+    display: flex;
+}
+.heroAboutMe>h2{
+    margin-top: 26px;
+    margin-bottom: 26px;
+
+
+font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+.heroAboutMe>h1{
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 47px;
+}
+.heroAboutMe>p{
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    
+        color: rgba(255, 255, 255, 0.6);
+}
+.hero-img {
+    width: 286px;
+    margin-right: 53px;
+}
+
+.heroAboutMe {
+    margin-top: 29px;
+    color: #fff;
+}
+
+.sub-hero {
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.sub-hero>span{
+    text-align: center;
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+
+    margin-right: 54px;
+}
+
+.dev-lang {
+    list-style: none;
+    gap: 32px;
+    display: flex;
+    color: #fff;
+}
+
+.dev-item {
+    width: 95px;
+    height: 99px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.dev-item>a{
+    cursor: pointer;
+}
+
+/* -------Projects----------- */
+
+
+.projects {
+    margin-top: 178px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.list-project {
+    
+    list-style: none;
+    display: flex;
+    gap: 109px;
+}
+
+.project-item {}
+
+.project {
+
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 341px;
+    height: 510px;
+    background-color: black;
+    border: 1px solid #fff;
+    border-radius: 15px;
+
+    transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0ms;
+}
+
+.project>div{
+    text-align: center;
+    
+
+    position: relative;
+
+    width: 236px;
+    height: 236px;
+    background-color: black;
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    transition-property: border-color, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0ms;
+}
+
+.project>div::before{
+    transform-origin: top;
+    transform: rotate(180deg);
+
+    position: absolute;
+    left: 117px;
+
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 137px;
+    background-color: #fff;
+
+    transition-property: height, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0ms;
+}
+
+.project>div::after {
+    position: absolute;
+    top: 100%;
+    left: 117px;
+
+    content: '';
+    display: block;
+    width: 1px;
+    height: 137px;
+    background-color: #fff;
+
+
+    transition-property: height, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0ms;
+}
+
+
+.project>div>p{
+    margin-top: 97px;
+    margin-bottom: 37px;
+
+font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #fff;
+
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0ms;
+}
+
+.project>div>span{
+
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+    
+        color: rgba(255, 255, 255, 0.5);
+
+        transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-delay: 0ms;
+}
+
+.project-item:hover .project>div{
+    background-color: #fff;
+    border-color: #0094FF;
+}
+.project-item:hover .project>div>p {
+    color: #0094FF;
+}
+.project-item:hover .project>div>span {
+    color: rgba(0, 148, 255, 0.5);
+}
+.project-item:hover .project{
+    border-color: #0094FF;
+}
+.project-item:hover .project>div::after {
+    background-color: #0094FF;
+    height: 0px;
+}
+
+.project-item:hover .project>div::before {
+    background-color: #0094FF;
+    height: 0px;
+}
+
+.project-item:hover{
+    cursor: pointer;
+}
+/* --------Overlay-------- */
+
+.overlay {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+.button {
+   z-index: 10;
+
+    width: 471px;
+    height: 471px;
+    background-color: black;
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 128px;
+        line-height: 150px;
+    
+        color: #FFFFFF;
+}
+
+.overlay>div{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.button::before{
+    position: absolute;
+    top: 50%;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.button:hover .button::before{
+    width: 0;
+}
+.button:hover {
+    border-color: #0094FF;
+    background-color: #fff;
+    color: #0094FF;
+}
